@@ -74,7 +74,7 @@ Gradio를 사용하여 Sagemaker Endpoint에 deploy한 상태에서 Stable Diffu
 
 ![Select the preset profile](static/2.png)
 
-- examples:
+- 생성 예시:
 ![example1](static/1.png)
 ![example2](static/3.png)
 ![example3](static/4.png)
