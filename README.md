@@ -69,6 +69,18 @@ img_data = base64.b64decode(result["image_base64"])
 Image.open(BytesIO(img_data)).show()
 ```
 
+## Gradio
+You can test Stable Diffusion via a deployed SageMaker Endpoint using Gradio.
+As shown in the image below, several predefined Prompt Profiles have been created within Gradio.
+By simply entering a few descriptive keywords about the object you want to generate, SDXL will produce an image based on the corresponding predefined template.
+
+![Select the preset profile](static/2.png)
+
+- examples:
+![example1](static/1.png)
+![example2](static/3.png)
+![example3](static/4.png)
+
 ## 🔐 Security Best Practices
 
 This project follows AWS security best practices:

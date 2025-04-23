@@ -67,6 +67,19 @@ img_data = base64.b64decode(result["image_base64"])
 Image.open(BytesIO(img_data)).show()
 ```
 
+
+## Gradio
+Gradio를 사용하여 Sagemaker Endpoint에 deploy한 상태에서 Stable Diffusion을 테스트 해 볼 수 있습니다. 
+아래 그림과 같이 Gradio에 사전 정의한 Prompt-Profile을 생성해 두었습니다. 생성한 프롬프트에 생성하고자 하는 그림의 개체를 설명하는 몇개의 단어를 입력하면, 사전 정의된 템플릿에 따라 SDXL이 이미지를 생성할 것입니다. 
+
+![Select the preset profile](static/2.png)
+
+- examples:
+![example1](static/1.png)
+![example2](static/3.png)
+![example3](static/4.png)
+
+
 ## 🔐 보안 가이드라인
 
 이 프로젝트에서는 다음의 보안 모범 사례를 따릅니다:
